@@ -3,8 +3,13 @@
 
 
 using System;
+using System.Reflection;
+using LBDIdentityServer4.Data;
+using LBDIdentityServer4.Model;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -14,7 +19,7 @@ namespace LBDIdentityServer4
     {
         public IHostingEnvironment Environment { get; }
 
-        public IConfiguration _configuration;
+        public IConfiguration _configuration { get; }
 
         public Startup(IHostingEnvironment environment, IConfiguration configuration)
         {
@@ -25,13 +30,31 @@ namespace LBDIdentityServer4
         public void ConfigureServices(IServiceCollection services)
         {
             // uncomment, if you want to add an MVC-based UI
-            //services.AddMvc().SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_2_1);
+            string connStr = _configuration.GetConnectionString("DefaultConnection");
+            var migationsAssembly = typeof(Startup).GetTypeInfo().Assembly.GetName().Name;
+
+            services.AddDbContext<ApplicationDbContext>(option=> 
+            {
+                option.UseMySql(connStr);
+            });
+            services.AddIdentity<ApplicationUser, IdentityRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultTokenProviders();
+
+            services.AddMvc();
 
             var builder = services.AddIdentityServer()
-                .AddInMemoryIdentityResources(Config.GetIdentityResources())
-                .AddInMemoryApiResources(Config.GetApis())
-                .AddInMemoryClients(Config.GetClients());
-
+                .AddAspNetIdentity<ApplicationUser>()
+                .AddConfigurationStore(option=> 
+                {
+                    option.ConfigureDbContext = c => c.UseMySql(connStr,sql=>sql.MigrationsAssembly(migationsAssembly));
+                })
+                .AddOperationalStore(option =>
+                {
+                    option.ConfigureDbContext = c => c.UseMySql(connStr, sql => sql.MigrationsAssembly(migationsAssembly));
+                    option.EnableTokenCleanup = true;
+                })
+                ;
             if (Environment.IsDevelopment())
             {
                 builder.AddDeveloperSigningCredential();
@@ -40,6 +63,7 @@ namespace LBDIdentityServer4
             {
                 throw new Exception("need to configure key material");
             }
+            services.AddAuthentication();
         }
 
         public void Configure(IApplicationBuilder app)
@@ -50,12 +74,12 @@ namespace LBDIdentityServer4
             }
 
             // uncomment if you want to support static files
-            //app.UseStaticFiles();
+            app.UseStaticFiles();
 
             app.UseIdentityServer();
 
             // uncomment, if you want to add an MVC-based UI
-            //app.UseMvcWithDefaultRoute();
+            app.UseMvcWithDefaultRoute();
         }
     }
 }
