@@ -1,0 +1,15 @@
+﻿@model LBDIdentityServer4.Quickstart.Role.RoleUserViewModel
+@{
+    ViewBag.Title = "从角色移除用户";
+}
+<h2>@ViewBag.Title</h2>
+<form asp-action="DeleteUserFromRole" method="post">
+    <input type="hidden" name="role_id" value="@Model.role_id" />
+    <select class="form-control" asp-for="user_id" asp-items="@(new SelectList(Model.users, "Id", "UserName"))">
+        <option> -- 请选择一个用户 -- </option>
+    </select>
+    <button class="btn btn-primary" type="submit">移除</button>
+    <a class="btn btn-secondary" asp-action="EditRole" asp-route-id="@Model.role_id">返回</a>
+    <div class="invalid" asp-validation-summary="ModelOnly">
+    </div>
+</form>

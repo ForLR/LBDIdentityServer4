@@ -63,7 +63,12 @@ namespace LBDIdentityServer4
             {
                 throw new Exception("need to configure key material");
             }
-            services.AddAuthentication();
+            services.AddAuthentication()
+                .AddGoogle(option=> 
+                {
+                    option.ClientId = "123";
+                    option.ClientSecret = "qw";
+                });
         }
 
         public void Configure(IApplicationBuilder app)

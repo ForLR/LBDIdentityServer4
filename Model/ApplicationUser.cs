@@ -9,5 +9,6 @@ namespace LBDIdentityServer4.Model
     public class ApplicationUser:IdentityUser
     {
 
+        public bool IsDelete { get; set; }
     }
 }
