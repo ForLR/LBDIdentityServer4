@@ -1,0 +1,65 @@
+﻿@model LBDIdentityServer4.Quickstart.ConfigurationManage.ClientsViewModel
+
+@{
+    ViewData["Title"] = "AddClients";
+}
+
+<h2>添加客户端</h2>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddClients">
+
+            <div class="form-group">
+                <label asp-for="client_id" class="control-label"></label>
+                <input asp-for="client_id" class="form-control" />
+                <span asp-validation-for="client_id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="client_name" class="control-label"></label>
+                <input asp-for="client_name" class="form-control" />
+                <span asp-validation-for="client_name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="client_secrets" class="control-label"></label>
+                <input asp-for="client_secrets" class="form-control" />
+                <span asp-validation-for="client_secrets" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="allowed_scopes" class="control-label"></label>
+                <input asp-for="allowed_scopes" class="form-control" />
+                <span asp-validation-for="allowed_scopes" class="text-danger"></span>
+            </div>
+
+            @*<div class="form-group">
+                <label asp-for="redirect_uris" class="control-label"></label>
+                <input asp-for="redirect_uris" class="form-control" />
+                <span asp-validation-for="redirect_uris" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="post_logout_redirect_uris" class="control-label"></label>
+                <input asp-for="post_logout_redirect_uris" class="form-control" />
+                <span asp-validation-for="post_logout_redirect_uris" class="text-danger"></span>
+            </div>*@
+
+            <div class="form-group">
+                <label asp-for="allowed_grant_types" class="control-label"></label>
+                <select class="form-control" asp-for="allowed_grant_types" asp-items="@(new SelectList(Model.allowed_grant_types))">
+                    <option> -- 请选择一个授权类型 -- </option>
+                </select>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="创建" class="btn btn-default" />
+            </div>
+        </form>
+   </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

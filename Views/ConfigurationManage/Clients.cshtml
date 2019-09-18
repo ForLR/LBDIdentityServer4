@@ -1,0 +1,77 @@
+﻿@model IEnumerable<LBDIdentityServer4.Quickstart.ConfigurationManage.ClientsViewModel>
+
+@{
+    ViewData["Title"] = "Clients";
+}
+
+<h2>Clients</h2>
+
+<p>
+    <a asp-action="AddClients">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.client_id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.client_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.client_secrets)
+            </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.allowed_cors_origins)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.allowed_grant_types)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.allowed_scopes)
+            </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.post_logout_redirect_uris)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.redirect_uris)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.client_id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.client_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.client_secrets)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.allowed_cors_origins.Aggregate((x, y) => x + "," + y))
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.allowed_grant_types.Aggregate((x, y) => x + "," + y))
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.allowed_scopes.Aggregate((x, y) => x + "," + y))
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.post_logout_redirect_uris)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.redirect_uris)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1357,3 +1357,1305 @@ Parameter name: type
 2019-09-17 17:25:32.263 +08:00 [DBG] Consent Return Url Parameter: returnUrl
 2019-09-17 17:25:32.263 +08:00 [DBG] Error Url: /home/error
 2019-09-17 17:25:32.263 +08:00 [DBG] Error Id Parameter: errorId
+2019-09-18 09:37:18.027 +08:00 [INF] Starting IdentityServer4 version 2.5.0.0
+2019-09-18 09:37:18.428 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-09-18 09:37:18.428 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-09-18 09:37:18.428 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-09-18 09:37:18.428 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-09-18 09:37:18.428 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-09-18 09:37:18.428 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-09-18 09:37:18.913 +08:00 [DBG] Starting grant removal
+2019-09-18 09:37:19.271 +08:00 [DBG] Login Url: /Account/Login
+2019-09-18 09:37:19.272 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-09-18 09:37:19.272 +08:00 [DBG] Logout Url: /Account/Logout
+2019-09-18 09:37:19.272 +08:00 [DBG] ConsentUrl Url: /consent
+2019-09-18 09:37:19.272 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-09-18 09:37:19.272 +08:00 [DBG] Error Url: /home/error
+2019-09-18 09:37:19.273 +08:00 [DBG] Error Id Parameter: errorId
+2019-09-18 09:37:40.649 +08:00 [ERR] The view 'Index' was not found. Searched locations: ["/Views/ConfigurationManage/Index.cshtml","/Views/Shared/Index.cshtml","/Pages/Shared/Index.cshtml"]
+2019-09-18 09:37:41.212 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The view 'Index' was not found. The following locations were searched:
+/Views/ConfigurationManage/Index.cshtml
+/Views/Shared/Index.cshtml
+/Pages/Shared/Index.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 72
+   at IdentityServer4.Hosting.MutualTlsTokenEndpointMiddleware.Invoke(HttpContext context, IAuthenticationSchemeProvider schemes) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Hosting\MtlsTokenEndpointMiddleware.cs:line 60
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Hosting\BaseUrlMiddleware.cs:line 36
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-09-18 09:37:46.110 +08:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2019-09-18 09:37:49.273 +08:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2019-09-18 09:37:59.818 +08:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2019-09-18 10:07:48.030 +08:00 [INF] Starting IdentityServer4 version 2.5.0.0
+2019-09-18 10:07:48.395 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-09-18 10:07:48.395 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-09-18 10:07:48.395 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-09-18 10:07:48.395 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-09-18 10:07:48.395 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-09-18 10:07:48.396 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-09-18 10:07:48.857 +08:00 [DBG] Starting grant removal
+2019-09-18 10:07:49.203 +08:00 [DBG] Login Url: /Account/Login
+2019-09-18 10:07:49.205 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-09-18 10:07:49.205 +08:00 [DBG] Logout Url: /Account/Logout
+2019-09-18 10:07:49.205 +08:00 [DBG] ConsentUrl Url: /consent
+2019-09-18 10:07:49.205 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-09-18 10:07:49.205 +08:00 [DBG] Error Url: /home/error
+2019-09-18 10:07:49.205 +08:00 [DBG] Error Id Parameter: errorId
+2019-09-18 10:21:20.610 +08:00 [INF] Starting IdentityServer4 version 2.5.0.0
+2019-09-18 10:21:20.770 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-09-18 10:21:20.770 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-09-18 10:21:20.770 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-09-18 10:21:20.770 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-09-18 10:21:20.770 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-09-18 10:21:20.770 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-09-18 10:21:20.874 +08:00 [DBG] Starting grant removal
+2019-09-18 10:21:21.194 +08:00 [DBG] Login Url: /Account/Login
+2019-09-18 10:21:21.195 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-09-18 10:21:21.196 +08:00 [DBG] Logout Url: /Account/Logout
+2019-09-18 10:21:21.196 +08:00 [DBG] ConsentUrl Url: /consent
+2019-09-18 10:21:21.196 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-09-18 10:21:21.198 +08:00 [DBG] Error Url: /home/error
+2019-09-18 10:21:21.198 +08:00 [DBG] Error Id Parameter: errorId
+2019-09-18 10:21:25.731 +08:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2019-09-18 10:21:26.912 +08:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2019-09-18 10:21:29.015 +08:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2019-09-18 10:23:07.042 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AspNetCore.Views_ConfigurationManage_AddClients.<ExecuteAsync>b__20_0() in E:\MyNetCore\LBDIdentityServer4\Views\ConfigurationManage\AddClients.cshtml:line 26
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at AspNetCore.Views_ConfigurationManage_AddClients.ExecuteAsync() in E:\MyNetCore\LBDIdentityServer4\Views\ConfigurationManage\AddClients.cshtml:line 4
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 72
+   at IdentityServer4.Hosting.MutualTlsTokenEndpointMiddleware.Invoke(HttpContext context, IAuthenticationSchemeProvider schemes) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Hosting\MtlsTokenEndpointMiddleware.cs:line 60
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Hosting\BaseUrlMiddleware.cs:line 36
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-09-18 10:41:37.503 +08:00 [INF] Starting IdentityServer4 version 2.5.0.0
+2019-09-18 10:41:37.662 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-09-18 10:41:37.662 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-09-18 10:41:37.662 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-09-18 10:41:37.662 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-09-18 10:41:37.662 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-09-18 10:41:37.662 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-09-18 10:41:37.765 +08:00 [DBG] Starting grant removal
+2019-09-18 10:41:37.935 +08:00 [DBG] Login Url: /Account/Login
+2019-09-18 10:41:37.937 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-09-18 10:41:37.937 +08:00 [DBG] Logout Url: /Account/Logout
+2019-09-18 10:41:37.937 +08:00 [DBG] ConsentUrl Url: /consent
+2019-09-18 10:41:37.937 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-09-18 10:41:37.937 +08:00 [DBG] Error Url: /home/error
+2019-09-18 10:41:37.937 +08:00 [DBG] Error Id Parameter: errorId
+2019-09-18 10:42:05.172 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AspNetCore.Views_ConfigurationManage_AddClients.<ExecuteAsync>b__20_0() in E:\MyNetCore\LBDIdentityServer4\Views\ConfigurationManage\AddClients.cshtml:line 26
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at AspNetCore.Views_ConfigurationManage_AddClients.ExecuteAsync() in E:\MyNetCore\LBDIdentityServer4\Views\ConfigurationManage\AddClients.cshtml:line 4
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 72
+   at IdentityServer4.Hosting.MutualTlsTokenEndpointMiddleware.Invoke(HttpContext context, IAuthenticationSchemeProvider schemes) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Hosting\MtlsTokenEndpointMiddleware.cs:line 60
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Hosting\BaseUrlMiddleware.cs:line 36
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-09-18 10:42:35.912 +08:00 [INF] Starting IdentityServer4 version 2.5.0.0
+2019-09-18 10:42:36.048 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-09-18 10:42:36.048 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-09-18 10:42:36.048 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-09-18 10:42:36.048 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-09-18 10:42:36.048 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-09-18 10:42:36.048 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-09-18 10:42:36.141 +08:00 [DBG] Starting grant removal
+2019-09-18 10:42:36.473 +08:00 [DBG] Login Url: /Account/Login
+2019-09-18 10:42:36.474 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-09-18 10:42:36.474 +08:00 [DBG] Logout Url: /Account/Logout
+2019-09-18 10:42:36.474 +08:00 [DBG] ConsentUrl Url: /consent
+2019-09-18 10:42:36.474 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-09-18 10:42:36.474 +08:00 [DBG] Error Url: /home/error
+2019-09-18 10:42:36.474 +08:00 [DBG] Error Id Parameter: errorId
+2019-09-18 10:43:31.314 +08:00 [INF] Starting IdentityServer4 version 2.5.0.0
+2019-09-18 10:43:31.451 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-09-18 10:43:31.451 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-09-18 10:43:31.451 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-09-18 10:43:31.451 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-09-18 10:43:31.451 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-09-18 10:43:31.451 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-09-18 10:43:31.541 +08:00 [DBG] Starting grant removal
+2019-09-18 10:43:31.903 +08:00 [DBG] Login Url: /Account/Login
+2019-09-18 10:43:31.904 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-09-18 10:43:31.904 +08:00 [DBG] Logout Url: /Account/Logout
+2019-09-18 10:43:31.905 +08:00 [DBG] ConsentUrl Url: /consent
+2019-09-18 10:43:31.905 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-09-18 10:43:31.905 +08:00 [DBG] Error Url: /home/error
+2019-09-18 10:43:31.905 +08:00 [DBG] Error Id Parameter: errorId
+2019-09-18 10:59:08.252 +08:00 [INF] Starting IdentityServer4 version 2.5.0.0
+2019-09-18 10:59:08.389 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-09-18 10:59:08.389 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-09-18 10:59:08.389 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-09-18 10:59:08.389 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-09-18 10:59:08.389 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-09-18 10:59:08.389 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-09-18 10:59:08.483 +08:00 [DBG] Starting grant removal
+2019-09-18 10:59:08.686 +08:00 [DBG] Login Url: /Account/Login
+2019-09-18 10:59:08.688 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-09-18 10:59:08.688 +08:00 [DBG] Logout Url: /Account/Logout
+2019-09-18 10:59:08.688 +08:00 [DBG] ConsentUrl Url: /consent
+2019-09-18 10:59:08.688 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-09-18 10:59:08.688 +08:00 [DBG] Error Url: /home/error
+2019-09-18 10:59:08.688 +08:00 [DBG] Error Id Parameter: errorId
+2019-09-18 10:59:26.747 +08:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2019-09-18 10:59:45.984 +08:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2019-09-18 10:59:53.767 +08:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2019-09-18 10:59:58.478 +08:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-09-18 10:59:59.081 +08:00 [DBG] Augmenting SignInContext
+2019-09-18 10:59:59.083 +08:00 [DBG] Adding idp claim with value: local
+2019-09-18 10:59:59.083 +08:00 [DBG] Adding amr claim with value: pwd
+2019-09-18 10:59:59.083 +08:00 [DBG] Adding auth_time claim with value: 1568775599
+2019-09-18 10:59:59.097 +08:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2019-09-18 11:12:26.206 +08:00 [INF] Starting IdentityServer4 version 2.5.0.0
+2019-09-18 11:12:26.365 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-09-18 11:12:26.366 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-09-18 11:12:26.366 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-09-18 11:12:26.366 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-09-18 11:12:26.366 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-09-18 11:12:26.366 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-09-18 11:12:26.468 +08:00 [DBG] Starting grant removal
+2019-09-18 11:12:26.647 +08:00 [DBG] Login Url: /Account/Login
+2019-09-18 11:12:26.648 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-09-18 11:12:26.649 +08:00 [DBG] Logout Url: /Account/Logout
+2019-09-18 11:12:26.649 +08:00 [DBG] ConsentUrl Url: /consent
+2019-09-18 11:12:26.649 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-09-18 11:12:26.649 +08:00 [DBG] Error Url: /home/error
+2019-09-18 11:12:26.649 +08:00 [DBG] Error Id Parameter: errorId
+2019-09-18 11:53:45.634 +08:00 [INF] Starting IdentityServer4 version 2.5.0.0
+2019-09-18 11:53:45.781 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-09-18 11:53:45.781 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-09-18 11:53:45.781 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-09-18 11:53:45.781 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-09-18 11:53:45.781 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-09-18 11:53:45.781 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-09-18 11:53:45.922 +08:00 [DBG] Starting grant removal
+2019-09-18 11:53:46.071 +08:00 [DBG] Login Url: /Account/Login
+2019-09-18 11:53:46.073 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-09-18 11:53:46.073 +08:00 [DBG] Logout Url: /Account/Logout
+2019-09-18 11:53:46.073 +08:00 [DBG] ConsentUrl Url: /consent
+2019-09-18 11:53:46.073 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-09-18 11:53:46.073 +08:00 [DBG] Error Url: /home/error
+2019-09-18 11:53:46.073 +08:00 [DBG] Error Id Parameter: errorId
+2019-09-18 11:53:49.310 +08:00 [INF] Starting IdentityServer4 version 2.5.0.0
+2019-09-18 11:53:49.440 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-09-18 11:53:49.440 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-09-18 11:53:49.440 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-09-18 11:53:49.440 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-09-18 11:53:49.440 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-09-18 11:53:49.440 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-09-18 11:53:49.529 +08:00 [DBG] Starting grant removal
+2019-09-18 12:53:50.206 +08:00 [INF] Removing 0 grants
+2019-09-18 13:53:50.471 +08:00 [INF] Removing 0 grants
+2019-09-18 14:53:50.725 +08:00 [INF] Removing 0 grants
+2019-09-18 15:47:15.972 +08:00 [INF] Starting IdentityServer4 version 2.5.0.0
+2019-09-18 15:47:16.460 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-09-18 15:47:16.460 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-09-18 15:47:16.460 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-09-18 15:47:16.460 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-09-18 15:47:16.460 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-09-18 15:47:16.460 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-09-18 15:47:17.021 +08:00 [DBG] Starting grant removal
+2019-09-18 15:47:17.343 +08:00 [DBG] Login Url: /Account/Login
+2019-09-18 15:47:17.346 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-09-18 15:47:17.346 +08:00 [DBG] Logout Url: /Account/Logout
+2019-09-18 15:47:17.346 +08:00 [DBG] ConsentUrl Url: /consent
+2019-09-18 15:47:17.346 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-09-18 15:47:17.346 +08:00 [DBG] Error Url: /home/error
+2019-09-18 15:47:17.346 +08:00 [DBG] Error Id Parameter: errorId
+2019-09-18 15:47:21.898 +08:00 [WRN] Query: '(from ClientRedirectUri t in [x].RedirectUris select [t].RedirectUri).FirstOrDefault()' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+2019-09-18 15:47:21.903 +08:00 [WRN] Query: '(from ClientPostLogoutRedirectUri r in [x].PostLogoutRedirectUris select [r].PostLogoutRedirectUri)....' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+2019-09-18 15:47:21.904 +08:00 [WRN] Query: '(from ClientSecret t in [x].ClientSecrets select [t].Value).FirstOrDefault()' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+2019-09-18 15:49:26.838 +08:00 [INF] Starting IdentityServer4 version 2.5.0.0
+2019-09-18 15:49:26.988 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-09-18 15:49:26.988 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-09-18 15:49:26.988 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-09-18 15:49:26.988 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-09-18 15:49:26.988 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-09-18 15:49:26.989 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-09-18 15:49:27.091 +08:00 [DBG] Starting grant removal
+2019-09-18 15:49:27.230 +08:00 [DBG] Login Url: /Account/Login
+2019-09-18 15:49:27.231 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-09-18 15:49:27.231 +08:00 [DBG] Logout Url: /Account/Logout
+2019-09-18 15:49:27.231 +08:00 [DBG] ConsentUrl Url: /consent
+2019-09-18 15:49:27.231 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-09-18 15:49:27.231 +08:00 [DBG] Error Url: /home/error
+2019-09-18 15:49:27.232 +08:00 [DBG] Error Id Parameter: errorId
+2019-09-18 15:49:31.028 +08:00 [WRN] Query: '(from ClientRedirectUri t in [x].RedirectUris select [t].RedirectUri).FirstOrDefault()' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+2019-09-18 15:49:31.032 +08:00 [WRN] Query: '(from ClientPostLogoutRedirectUri r in [x].PostLogoutRedirectUris select [r].PostLogoutRedirectUri)....' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+2019-09-18 15:49:31.033 +08:00 [WRN] Query: '(from ClientSecret t in [x].ClientSecrets select [t].Value).FirstOrDefault()' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+2019-09-18 15:51:59.642 +08:00 [INF] Starting IdentityServer4 version 2.5.0.0
+2019-09-18 15:51:59.813 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-09-18 15:51:59.813 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-09-18 15:51:59.813 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-09-18 15:51:59.813 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-09-18 15:51:59.814 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-09-18 15:51:59.814 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-09-18 15:51:59.908 +08:00 [DBG] Starting grant removal
+2019-09-18 15:52:00.240 +08:00 [DBG] Login Url: /Account/Login
+2019-09-18 15:52:00.242 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-09-18 15:52:00.242 +08:00 [DBG] Logout Url: /Account/Logout
+2019-09-18 15:52:00.242 +08:00 [DBG] ConsentUrl Url: /consent
+2019-09-18 15:52:00.242 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-09-18 15:52:00.242 +08:00 [DBG] Error Url: /home/error
+2019-09-18 15:52:00.242 +08:00 [DBG] Error Id Parameter: errorId
+2019-09-18 15:52:11.159 +08:00 [INF] Starting IdentityServer4 version 2.5.0.0
+2019-09-18 15:52:11.526 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-09-18 15:52:11.526 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-09-18 15:52:11.526 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-09-18 15:52:11.526 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-09-18 15:52:11.526 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-09-18 15:52:11.527 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-09-18 15:52:12.010 +08:00 [DBG] Starting grant removal
+2019-09-18 15:52:12.347 +08:00 [DBG] Login Url: /Account/Login
+2019-09-18 15:52:12.348 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-09-18 15:52:12.348 +08:00 [DBG] Logout Url: /Account/Logout
+2019-09-18 15:52:12.348 +08:00 [DBG] ConsentUrl Url: /consent
+2019-09-18 15:52:12.348 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-09-18 15:52:12.349 +08:00 [DBG] Error Url: /home/error
+2019-09-18 15:52:12.349 +08:00 [DBG] Error Id Parameter: errorId
+2019-09-18 15:52:14.412 +08:00 [WRN] Query: '(from ClientRedirectUri t in [x].RedirectUris select [t].RedirectUri).FirstOrDefault()' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+2019-09-18 15:52:14.418 +08:00 [WRN] Query: '(from ClientPostLogoutRedirectUri r in [x].PostLogoutRedirectUris select [r].PostLogoutRedirectUri)....' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+2019-09-18 15:52:14.418 +08:00 [WRN] Query: '(from ClientSecret t in [x].ClientSecrets select [t].Value).FirstOrDefault()' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+2019-09-18 15:53:02.143 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null.
+Parameter name: items
+   at Microsoft.AspNetCore.Mvc.Rendering.MultiSelectList..ctor(IEnumerable items, String dataValueField, String dataTextField, IEnumerable selectedValues, String dataGroupField)
+   at Microsoft.AspNetCore.Mvc.Rendering.SelectList..ctor(IEnumerable items, String dataValueField, String dataTextField, Object selectedValue)
+   at Microsoft.AspNetCore.Mvc.Rendering.SelectList..ctor(IEnumerable items, Object selectedValue)
+   at Microsoft.AspNetCore.Mvc.Rendering.SelectList..ctor(IEnumerable items)
+   at AspNetCore.Views_ConfigurationManage_AddClients.<ExecuteAsync>b__20_0() in E:\MyNetCore\LBDIdentityServer4\Views\ConfigurationManage\AddClients.cshtml:line 37
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.GetChildContentAsync(Boolean useCachedResult, HtmlEncoder encoder)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.RunAsync(TagHelperExecutionContext executionContext)
+   at AspNetCore.Views_ConfigurationManage_AddClients.ExecuteAsync() in E:\MyNetCore\LBDIdentityServer4\Views\ConfigurationManage\AddClients.cshtml:line 4
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 72
+   at IdentityServer4.Hosting.MutualTlsTokenEndpointMiddleware.Invoke(HttpContext context, IAuthenticationSchemeProvider schemes) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Hosting\MtlsTokenEndpointMiddleware.cs:line 60
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Hosting\BaseUrlMiddleware.cs:line 36
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-09-18 15:56:20.565 +08:00 [INF] Starting IdentityServer4 version 2.5.0.0
+2019-09-18 15:56:20.951 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-09-18 15:56:20.951 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-09-18 15:56:20.952 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-09-18 15:56:20.952 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-09-18 15:56:20.952 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-09-18 15:56:20.952 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-09-18 15:56:21.445 +08:00 [DBG] Starting grant removal
+2019-09-18 15:56:21.732 +08:00 [DBG] Login Url: /Account/Login
+2019-09-18 15:56:21.733 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-09-18 15:56:21.733 +08:00 [DBG] Logout Url: /Account/Logout
+2019-09-18 15:56:21.733 +08:00 [DBG] ConsentUrl Url: /consent
+2019-09-18 15:56:21.733 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-09-18 15:56:21.733 +08:00 [DBG] Error Url: /home/error
+2019-09-18 15:56:21.733 +08:00 [DBG] Error Id Parameter: errorId
+2019-09-18 15:56:24.103 +08:00 [WRN] Query: '(from ClientRedirectUri t in [x].RedirectUris select [t].RedirectUri).FirstOrDefault()' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+2019-09-18 15:56:24.110 +08:00 [WRN] Query: '(from ClientPostLogoutRedirectUri r in [x].PostLogoutRedirectUris select [r].PostLogoutRedirectUri)....' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+2019-09-18 15:56:24.111 +08:00 [WRN] Query: '(from ClientSecret t in [x].ClientSecrets select [t].Value).FirstOrDefault()' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+2019-09-18 15:56:44.681 +08:00 [ERR] An exception occurred in the database while saving changes for context type 'IdentityServer4.EntityFramework.DbContexts.ConfigurationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> MySql.Data.MySqlClient.MySqlException: Column 'PostLogoutRedirectUri' cannot be null ---> MySql.Data.MySqlClient.MySqlException: Column 'PostLogoutRedirectUri' cannot be null
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:line 43
+   --- End of inner exception stack trace ---
+   at MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 81
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResultAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 60
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> MySql.Data.MySqlClient.MySqlException: Column 'PostLogoutRedirectUri' cannot be null ---> MySql.Data.MySqlClient.MySqlException: Column 'PostLogoutRedirectUri' cannot be null
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:line 43
+   --- End of inner exception stack trace ---
+   at MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 81
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResultAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 60
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2019-09-18 15:56:46.402 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> MySql.Data.MySqlClient.MySqlException: Column 'PostLogoutRedirectUri' cannot be null ---> MySql.Data.MySqlClient.MySqlException: Column 'PostLogoutRedirectUri' cannot be null
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:line 43
+   --- End of inner exception stack trace ---
+   at MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 81
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResultAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 60
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at LBDIdentityServer4.Quickstart.ConfigurationManage.ConfigurationManageController.AddClients(ClientsViewModel args) in E:\MyNetCore\LBDIdentityServer4\Quickstart\ConfigurationManage\ConfigurationManageController.cs:line 95
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 72
+   at IdentityServer4.Hosting.MutualTlsTokenEndpointMiddleware.Invoke(HttpContext context, IAuthenticationSchemeProvider schemes) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Hosting\MtlsTokenEndpointMiddleware.cs:line 60
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Hosting\BaseUrlMiddleware.cs:line 36
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-09-18 15:58:37.986 +08:00 [INF] Starting IdentityServer4 version 2.5.0.0
+2019-09-18 15:58:38.342 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-09-18 15:58:38.342 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-09-18 15:58:38.343 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-09-18 15:58:38.343 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-09-18 15:58:38.343 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-09-18 15:58:38.343 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-09-18 15:58:38.835 +08:00 [DBG] Starting grant removal
+2019-09-18 15:58:39.162 +08:00 [DBG] Login Url: /Account/Login
+2019-09-18 15:58:39.164 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-09-18 15:58:39.164 +08:00 [DBG] Logout Url: /Account/Logout
+2019-09-18 15:58:39.164 +08:00 [DBG] ConsentUrl Url: /consent
+2019-09-18 15:58:39.164 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-09-18 15:58:39.164 +08:00 [DBG] Error Url: /home/error
+2019-09-18 15:58:39.164 +08:00 [DBG] Error Id Parameter: errorId
+2019-09-18 15:58:41.364 +08:00 [WRN] Query: '(from ClientRedirectUri t in [x].RedirectUris select [t].RedirectUri).FirstOrDefault()' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+2019-09-18 15:58:41.370 +08:00 [WRN] Query: '(from ClientPostLogoutRedirectUri r in [x].PostLogoutRedirectUris select [r].PostLogoutRedirectUri)....' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+2019-09-18 15:58:41.370 +08:00 [WRN] Query: '(from ClientSecret t in [x].ClientSecrets select [t].Value).FirstOrDefault()' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+2019-09-18 15:59:08.568 +08:00 [ERR] An exception occurred in the database while saving changes for context type 'IdentityServer4.EntityFramework.DbContexts.ConfigurationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> MySql.Data.MySqlClient.MySqlException: Column 'PostLogoutRedirectUri' cannot be null ---> MySql.Data.MySqlClient.MySqlException: Column 'PostLogoutRedirectUri' cannot be null
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:line 43
+   --- End of inner exception stack trace ---
+   at MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 81
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResultAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 60
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> MySql.Data.MySqlClient.MySqlException: Column 'PostLogoutRedirectUri' cannot be null ---> MySql.Data.MySqlClient.MySqlException: Column 'PostLogoutRedirectUri' cannot be null
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:line 43
+   --- End of inner exception stack trace ---
+   at MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 81
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResultAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 60
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2019-09-18 15:59:10.248 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> MySql.Data.MySqlClient.MySqlException: Column 'PostLogoutRedirectUri' cannot be null ---> MySql.Data.MySqlClient.MySqlException: Column 'PostLogoutRedirectUri' cannot be null
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:line 43
+   --- End of inner exception stack trace ---
+   at MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 81
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResultAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 60
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at LBDIdentityServer4.Quickstart.ConfigurationManage.ConfigurationManageController.AddClients(ClientsViewModel args) in E:\MyNetCore\LBDIdentityServer4\Quickstart\ConfigurationManage\ConfigurationManageController.cs:line 95
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 72
+   at IdentityServer4.Hosting.MutualTlsTokenEndpointMiddleware.Invoke(HttpContext context, IAuthenticationSchemeProvider schemes) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Hosting\MtlsTokenEndpointMiddleware.cs:line 60
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Hosting\BaseUrlMiddleware.cs:line 36
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-09-18 15:59:34.968 +08:00 [INF] Starting IdentityServer4 version 2.5.0.0
+2019-09-18 15:59:35.339 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-09-18 15:59:35.339 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-09-18 15:59:35.340 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-09-18 15:59:35.340 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-09-18 15:59:35.340 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-09-18 15:59:35.340 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-09-18 15:59:35.822 +08:00 [DBG] Starting grant removal
+2019-09-18 15:59:36.161 +08:00 [DBG] Login Url: /Account/Login
+2019-09-18 15:59:36.163 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-09-18 15:59:36.163 +08:00 [DBG] Logout Url: /Account/Logout
+2019-09-18 15:59:36.163 +08:00 [DBG] ConsentUrl Url: /consent
+2019-09-18 15:59:36.163 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-09-18 15:59:36.163 +08:00 [DBG] Error Url: /home/error
+2019-09-18 15:59:36.163 +08:00 [DBG] Error Id Parameter: errorId
+2019-09-18 15:59:38.276 +08:00 [WRN] Query: '(from ClientRedirectUri t in [x].RedirectUris select [t].RedirectUri).FirstOrDefault()' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+2019-09-18 15:59:38.281 +08:00 [WRN] Query: '(from ClientPostLogoutRedirectUri r in [x].PostLogoutRedirectUris select [r].PostLogoutRedirectUri)....' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+2019-09-18 15:59:38.281 +08:00 [WRN] Query: '(from ClientSecret t in [x].ClientSecrets select [t].Value).FirstOrDefault()' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+2019-09-18 16:00:01.327 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Templates can be used only with field access, property access, single-dimension array index, or single-parameter custom indexer expressions.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ExpressionMetadataProvider.FromLambdaExpression[TModel,TResult](Expression`1 expression, ViewDataDictionary`1 viewData, IModelMetadataProvider metadataProvider)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper`1.GetModelExplorer[TResult](Expression`1 expression)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper`1.DisplayFor[TResult](Expression`1 expression, String templateName, String htmlFieldName, Object additionalViewData)
+   at Microsoft.AspNetCore.Mvc.Rendering.HtmlHelperDisplayExtensions.DisplayFor[TModel,TResult](IHtmlHelper`1 htmlHelper, Expression`1 expression)
+   at AspNetCore.Views_ConfigurationManage_Clients.ExecuteAsync() in E:\MyNetCore\LBDIdentityServer4\Views\ConfigurationManage\Clients.cshtml:line 55
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 72
+   at IdentityServer4.Hosting.MutualTlsTokenEndpointMiddleware.Invoke(HttpContext context, IAuthenticationSchemeProvider schemes) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Hosting\MtlsTokenEndpointMiddleware.cs:line 60
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Hosting\BaseUrlMiddleware.cs:line 36
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-09-18 16:00:17.732 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Templates can be used only with field access, property access, single-dimension array index, or single-parameter custom indexer expressions.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ExpressionMetadataProvider.FromLambdaExpression[TModel,TResult](Expression`1 expression, ViewDataDictionary`1 viewData, IModelMetadataProvider metadataProvider)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper`1.GetModelExplorer[TResult](Expression`1 expression)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.HtmlHelper`1.DisplayFor[TResult](Expression`1 expression, String templateName, String htmlFieldName, Object additionalViewData)
+   at Microsoft.AspNetCore.Mvc.Rendering.HtmlHelperDisplayExtensions.DisplayFor[TModel,TResult](IHtmlHelper`1 htmlHelper, Expression`1 expression)
+   at AspNetCore.Views_ConfigurationManage_Clients.ExecuteAsync() in E:\MyNetCore\LBDIdentityServer4\Views\ConfigurationManage\Clients.cshtml:line 55
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 72
+   at IdentityServer4.Hosting.MutualTlsTokenEndpointMiddleware.Invoke(HttpContext context, IAuthenticationSchemeProvider schemes) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Hosting\MtlsTokenEndpointMiddleware.cs:line 60
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Hosting\BaseUrlMiddleware.cs:line 36
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-09-18 16:00:38.405 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+E:\MyNetCore\LBDIdentityServer4\Views\ConfigurationManage\Clients.cshtml(55,47): error CS8072: An expression tree lambda may not contain a null propagating operator.
+E:\MyNetCore\LBDIdentityServer4\Views\ConfigurationManage\Clients.cshtml(58,47): error CS8072: An expression tree lambda may not contain a null propagating operator.
+E:\MyNetCore\LBDIdentityServer4\Views\ConfigurationManage\Clients.cshtml(61,47): error CS8072: An expression tree lambda may not contain a null propagating operator.
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.OnCacheMiss(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 72
+   at IdentityServer4.Hosting.MutualTlsTokenEndpointMiddleware.Invoke(HttpContext context, IAuthenticationSchemeProvider schemes) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Hosting\MtlsTokenEndpointMiddleware.cs:line 60
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Hosting\BaseUrlMiddleware.cs:line 36
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-09-18 16:05:04.863 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-09-18 16:05:04.881 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-09-18 16:05:04.881 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-09-18 16:05:04.892 +08:00 [DBG] Start token request.
+2019-09-18 16:05:04.912 +08:00 [DBG] Start client validation
+2019-09-18 16:05:04.922 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-09-18 16:05:04.929 +08:00 [DBG] Start parsing for secret in post body
+2019-09-18 16:05:04.931 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-09-18 16:05:04.931 +08:00 [DBG] Secret id found: ro.client
+2019-09-18 16:05:05.174 +08:00 [DBG] ro.client found in database: false
+2019-09-18 16:05:05.183 +08:00 [ERR] No client with id 'ro.client' found. aborting
+2019-09-18 16:06:05.839 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-09-18 16:06:05.846 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-09-18 16:06:05.846 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-09-18 16:06:05.847 +08:00 [DBG] Start token request.
+2019-09-18 16:06:05.847 +08:00 [DBG] Start client validation
+2019-09-18 16:06:05.847 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-09-18 16:06:05.847 +08:00 [DBG] Start parsing for secret in post body
+2019-09-18 16:06:05.849 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-09-18 16:06:05.850 +08:00 [DBG] Secret id found: MyClient
+2019-09-18 16:06:07.075 +08:00 [DBG] MyClient found in database: true
+2019-09-18 16:06:07.083 +08:00 [ERR] Invalid client configuration for client MyClient: No redirect URI configured.
+2019-09-18 16:06:07.084 +08:00 [ERR] No client with id 'MyClient' found. aborting
+2019-09-18 16:06:10.639 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-09-18 16:06:10.641 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-09-18 16:06:10.641 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-09-18 16:06:10.641 +08:00 [DBG] Start token request.
+2019-09-18 16:06:10.641 +08:00 [DBG] Start client validation
+2019-09-18 16:06:10.641 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-09-18 16:06:10.641 +08:00 [DBG] Start parsing for secret in post body
+2019-09-18 16:06:10.642 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-09-18 16:06:10.642 +08:00 [DBG] Secret id found: MyClient
+2019-09-18 16:06:11.336 +08:00 [DBG] MyClient found in database: true
+2019-09-18 16:06:11.336 +08:00 [ERR] Invalid client configuration for client MyClient: No redirect URI configured.
+2019-09-18 16:06:11.336 +08:00 [ERR] No client with id 'MyClient' found. aborting
+2019-09-18 16:06:25.527 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-09-18 16:06:25.530 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-09-18 16:06:25.530 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-09-18 16:06:25.535 +08:00 [DBG] Start discovery request
+2019-09-18 16:06:25.789 +08:00 [DBG] Found [] as all scopes in database
+2019-09-18 16:08:32.332 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-09-18 16:08:32.334 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-09-18 16:08:32.334 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-09-18 16:08:32.335 +08:00 [DBG] Start token request.
+2019-09-18 16:08:32.335 +08:00 [DBG] Start client validation
+2019-09-18 16:08:32.335 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-09-18 16:08:32.335 +08:00 [DBG] Start parsing for secret in post body
+2019-09-18 16:08:32.345 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-09-18 16:08:32.345 +08:00 [DBG] Secret id found: MyClient
+2019-09-18 16:08:33.056 +08:00 [DBG] MyClient found in database: true
+2019-09-18 16:08:33.056 +08:00 [ERR] Invalid client configuration for client MyClient: No redirect URI configured.
+2019-09-18 16:08:33.056 +08:00 [ERR] No client with id 'MyClient' found. aborting
+2019-09-18 16:08:45.429 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+E:\MyNetCore\LBDIdentityServer4\Views\ConfigurationManage\Clients.cshtml(55,47): error CS8072: An expression tree lambda may not contain a null propagating operator.
+E:\MyNetCore\LBDIdentityServer4\Views\ConfigurationManage\Clients.cshtml(58,47): error CS8072: An expression tree lambda may not contain a null propagating operator.
+E:\MyNetCore\LBDIdentityServer4\Views\ConfigurationManage\Clients.cshtml(61,47): error CS8072: An expression tree lambda may not contain a null propagating operator.
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.OnCacheMiss(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 72
+   at IdentityServer4.Hosting.MutualTlsTokenEndpointMiddleware.Invoke(HttpContext context, IAuthenticationSchemeProvider schemes) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Hosting\MtlsTokenEndpointMiddleware.cs:line 60
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Hosting\BaseUrlMiddleware.cs:line 36
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-09-18 16:09:44.538 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+E:\MyNetCore\LBDIdentityServer4\Views\ConfigurationManage\Clients.cshtml(55,47): error CS8072: An expression tree lambda may not contain a null propagating operator.
+E:\MyNetCore\LBDIdentityServer4\Views\ConfigurationManage\Clients.cshtml(58,47): error CS8072: An expression tree lambda may not contain a null propagating operator.
+E:\MyNetCore\LBDIdentityServer4\Views\ConfigurationManage\Clients.cshtml(61,47): error CS8072: An expression tree lambda may not contain a null propagating operator.
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.OnCacheMiss(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewEngines.CompositeViewEngine.FindView(ActionContext context, String viewName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.FindView(ActionContext actionContext, ViewResult viewResult)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Hosting\IdentityServerMiddleware.cs:line 72
+   at IdentityServer4.Hosting.MutualTlsTokenEndpointMiddleware.Invoke(HttpContext context, IAuthenticationSchemeProvider schemes) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Hosting\MtlsTokenEndpointMiddleware.cs:line 60
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context) in C:\local\identity\server4\IdentityServer4\src\IdentityServer4\src\Hosting\BaseUrlMiddleware.cs:line 36
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-09-18 16:10:44.873 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-09-18 16:10:44.874 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-09-18 16:10:44.874 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-09-18 16:10:44.874 +08:00 [DBG] Start token request.
+2019-09-18 16:10:44.874 +08:00 [DBG] Start client validation
+2019-09-18 16:10:44.874 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-09-18 16:10:44.874 +08:00 [DBG] Start parsing for secret in post body
+2019-09-18 16:10:44.881 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-09-18 16:10:44.881 +08:00 [DBG] Secret id found: passClient
+2019-09-18 16:10:45.570 +08:00 [DBG] passClient found in database: true
+2019-09-18 16:10:45.574 +08:00 [DBG] client configuration validation for client passClient succeeded.
+2019-09-18 16:10:45.589 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-09-18 16:10:45.589 +08:00 [DBG] Client validation success
+2019-09-18 16:10:45.598 +08:00 [DBG] Start token request validation
+2019-09-18 16:10:45.611 +08:00 [DBG] Start resource owner password token request validation
+2019-09-18 16:10:45.732 +08:00 [DBG] Found [] identity scopes in database
+2019-09-18 16:10:45.852 +08:00 [DBG] Found [] API scopes in database
+2019-09-18 16:10:45.854 +08:00 [ERR] Requested scope not allowed: openId
+2019-09-18 16:10:45.867 +08:00 [ERR] {"ClientId":"passClient","ClientName":"passClient","GrantType":"password","Scopes":null,"AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"username":"873","password":"***REDACTED***","grant_type":"password","client_id":"passClient","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2019-09-18 16:11:02.150 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-09-18 16:11:02.151 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-09-18 16:11:02.151 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-09-18 16:11:02.151 +08:00 [DBG] Start token request.
+2019-09-18 16:11:02.151 +08:00 [DBG] Start client validation
+2019-09-18 16:11:02.152 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-09-18 16:11:02.152 +08:00 [DBG] Start parsing for secret in post body
+2019-09-18 16:11:02.152 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-09-18 16:11:02.152 +08:00 [DBG] Secret id found: passClient
+2019-09-18 16:11:02.844 +08:00 [DBG] passClient found in database: true
+2019-09-18 16:11:02.844 +08:00 [DBG] client configuration validation for client passClient succeeded.
+2019-09-18 16:11:02.845 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-09-18 16:11:02.845 +08:00 [DBG] Client validation success
+2019-09-18 16:11:02.845 +08:00 [DBG] Start token request validation
+2019-09-18 16:11:02.845 +08:00 [DBG] Start resource owner password token request validation
+2019-09-18 16:11:02.920 +08:00 [DBG] Found [] identity scopes in database
+2019-09-18 16:11:02.995 +08:00 [DBG] Found [] API scopes in database
+2019-09-18 16:11:02.996 +08:00 [ERR] Requested scope not allowed: openId
+2019-09-18 16:11:02.996 +08:00 [ERR] {"ClientId":"passClient","ClientName":"passClient","GrantType":"password","Scopes":null,"AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"username":"873","password":"***REDACTED***","grant_type":"password","client_id":"passClient","client_secret":"***REDACTED***","scope":"openId"},"$type":"TokenRequestValidationLog"}
+2019-09-18 16:12:33.724 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-09-18 16:12:33.725 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-09-18 16:12:33.728 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-09-18 16:12:33.728 +08:00 [DBG] Start token request.
+2019-09-18 16:12:33.728 +08:00 [DBG] Start client validation
+2019-09-18 16:12:33.728 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-09-18 16:12:33.728 +08:00 [DBG] Start parsing for secret in post body
+2019-09-18 16:12:33.731 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-09-18 16:12:33.731 +08:00 [DBG] Secret id found: passClient
+2019-09-18 16:12:34.427 +08:00 [DBG] passClient found in database: true
+2019-09-18 16:12:34.427 +08:00 [DBG] client configuration validation for client passClient succeeded.
+2019-09-18 16:12:34.427 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-09-18 16:12:34.427 +08:00 [DBG] Client validation success
+2019-09-18 16:12:34.427 +08:00 [DBG] Start token request validation
+2019-09-18 16:12:34.427 +08:00 [DBG] Start resource owner password token request validation
+2019-09-18 16:12:34.502 +08:00 [DBG] Found [] identity scopes in database
+2019-09-18 16:12:34.577 +08:00 [DBG] Found [] API scopes in database
+2019-09-18 16:12:34.578 +08:00 [ERR] Requested scope not allowed: openId
+2019-09-18 16:12:34.578 +08:00 [ERR] {"ClientId":"passClient","ClientName":"passClient","GrantType":"password","Scopes":null,"AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"username":"873","password":"***REDACTED***","grant_type":"password","client_id":"passClient","client_secret":"***REDACTED***","scope":"openId"},"$type":"TokenRequestValidationLog"}
+2019-09-18 16:12:45.484 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-09-18 16:12:45.485 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-09-18 16:12:45.485 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-09-18 16:12:45.498 +08:00 [DBG] Start token request.
+2019-09-18 16:12:45.499 +08:00 [DBG] Start client validation
+2019-09-18 16:12:45.499 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-09-18 16:12:45.499 +08:00 [DBG] Start parsing for secret in post body
+2019-09-18 16:12:45.508 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-09-18 16:12:45.508 +08:00 [DBG] Secret id found: passClient
+2019-09-18 16:12:46.206 +08:00 [DBG] passClient found in database: true
+2019-09-18 16:12:46.206 +08:00 [DBG] client configuration validation for client passClient succeeded.
+2019-09-18 16:12:46.206 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-09-18 16:12:46.206 +08:00 [DBG] Client validation success
+2019-09-18 16:12:46.206 +08:00 [DBG] Start token request validation
+2019-09-18 16:12:46.206 +08:00 [DBG] Start resource owner password token request validation
+2019-09-18 16:12:46.281 +08:00 [DBG] Found [] identity scopes in database
+2019-09-18 16:12:46.355 +08:00 [DBG] Found [] API scopes in database
+2019-09-18 16:12:46.356 +08:00 [ERR] Requested scope not allowed: openId
+2019-09-18 16:12:46.356 +08:00 [ERR] {"ClientId":"passClient","ClientName":"passClient","GrantType":"password","Scopes":null,"AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"username":"873","password":"***REDACTED***","grant_type":"password","client_id":"passClient","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2019-09-18 16:16:19.620 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-09-18 16:16:19.622 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-09-18 16:16:19.622 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-09-18 16:16:19.622 +08:00 [DBG] Start token request.
+2019-09-18 16:16:19.622 +08:00 [DBG] Start client validation
+2019-09-18 16:16:19.622 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-09-18 16:16:19.622 +08:00 [DBG] Start parsing for secret in post body
+2019-09-18 16:16:19.623 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-09-18 16:16:19.623 +08:00 [DBG] Secret id found: passClient
+2019-09-18 16:16:20.313 +08:00 [DBG] passClient found in database: true
+2019-09-18 16:16:20.313 +08:00 [DBG] client configuration validation for client passClient succeeded.
+2019-09-18 16:16:20.314 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-09-18 16:16:20.314 +08:00 [DBG] Client validation success
+2019-09-18 16:16:20.314 +08:00 [DBG] Start token request validation
+2019-09-18 16:16:20.314 +08:00 [DBG] Start resource owner password token request validation
+2019-09-18 16:16:20.389 +08:00 [DBG] Found [] identity scopes in database
+2019-09-18 16:16:20.464 +08:00 [DBG] Found [] API scopes in database
+2019-09-18 16:16:20.464 +08:00 [ERR] Requested scope not allowed: openId
+2019-09-18 16:16:20.464 +08:00 [ERR] {"ClientId":"passClient","ClientName":"passClient","GrantType":"password","Scopes":null,"AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"username":"873","password":"***REDACTED***","grant_type":"password","client_id":"passClient","client_secret":"***REDACTED***","scope":"openId"},"$type":"TokenRequestValidationLog"}
+2019-09-18 16:18:02.831 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-09-18 16:18:02.832 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-09-18 16:18:02.832 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-09-18 16:18:02.832 +08:00 [DBG] Start token request.
+2019-09-18 16:18:02.832 +08:00 [DBG] Start client validation
+2019-09-18 16:18:02.832 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-09-18 16:18:02.832 +08:00 [DBG] Start parsing for secret in post body
+2019-09-18 16:18:02.886 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-09-18 16:18:02.886 +08:00 [DBG] Secret id found: passClient
+2019-09-18 16:18:03.582 +08:00 [DBG] passClient found in database: true
+2019-09-18 16:18:03.582 +08:00 [DBG] client configuration validation for client passClient succeeded.
+2019-09-18 16:18:03.582 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-09-18 16:18:03.582 +08:00 [DBG] Client validation success
+2019-09-18 16:18:03.584 +08:00 [DBG] Start token request validation
+2019-09-18 16:18:03.584 +08:00 [DBG] Start resource owner password token request validation
+2019-09-18 16:18:03.659 +08:00 [DBG] Found [] identity scopes in database
+2019-09-18 16:18:03.735 +08:00 [DBG] Found [] API scopes in database
+2019-09-18 16:18:03.735 +08:00 [ERR] Requested scope not allowed: openId
+2019-09-18 16:18:03.736 +08:00 [ERR] {"ClientId":"passClient","ClientName":"passClient","GrantType":"password","Scopes":null,"AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"username":"873","password":"***REDACTED***","grant_type":"password","client_id":"passClient","client_secret":"***REDACTED***","scope":"openId"},"$type":"TokenRequestValidationLog"}
+2019-09-18 16:18:07.699 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-09-18 16:18:07.700 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-09-18 16:18:07.700 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-09-18 16:18:07.700 +08:00 [DBG] Start token request.
+2019-09-18 16:18:07.700 +08:00 [DBG] Start client validation
+2019-09-18 16:18:07.700 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-09-18 16:18:07.700 +08:00 [DBG] Start parsing for secret in post body
+2019-09-18 16:18:07.701 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-09-18 16:18:07.701 +08:00 [DBG] Secret id found: passClient
+2019-09-18 16:18:08.397 +08:00 [DBG] passClient found in database: true
+2019-09-18 16:18:08.397 +08:00 [DBG] client configuration validation for client passClient succeeded.
+2019-09-18 16:18:08.397 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-09-18 16:18:08.397 +08:00 [DBG] Client validation success
+2019-09-18 16:18:08.397 +08:00 [DBG] Start token request validation
+2019-09-18 16:18:08.397 +08:00 [ERR] Grant type is missing, {"ClientId":"passClient","ClientName":"passClient","GrantType":null,"Scopes":null,"AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"passClient","client_secret":"***REDACTED***","scope":"openId"},"$type":"TokenRequestValidationLog"}
+2019-09-18 16:18:12.523 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-09-18 16:18:12.524 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-09-18 16:18:12.524 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-09-18 16:18:12.524 +08:00 [DBG] Start token request.
+2019-09-18 16:18:12.524 +08:00 [DBG] Start client validation
+2019-09-18 16:18:12.524 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-09-18 16:18:12.524 +08:00 [DBG] Start parsing for secret in post body
+2019-09-18 16:18:12.525 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-09-18 16:18:12.525 +08:00 [DBG] Secret id found: passClient
+2019-09-18 16:18:13.223 +08:00 [DBG] passClient found in database: true
+2019-09-18 16:18:13.223 +08:00 [DBG] client configuration validation for client passClient succeeded.
+2019-09-18 16:18:13.223 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-09-18 16:18:13.223 +08:00 [DBG] Client validation success
+2019-09-18 16:18:13.223 +08:00 [DBG] Start token request validation
+2019-09-18 16:18:13.223 +08:00 [DBG] Start resource owner password token request validation
+2019-09-18 16:18:13.297 +08:00 [DBG] Found [] identity scopes in database
+2019-09-18 16:18:13.372 +08:00 [DBG] Found [] API scopes in database
+2019-09-18 16:18:13.372 +08:00 [ERR] Requested scope not allowed: openId
+2019-09-18 16:18:13.372 +08:00 [ERR] {"ClientId":"passClient","ClientName":"passClient","GrantType":"password","Scopes":null,"AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"password","client_id":"passClient","client_secret":"***REDACTED***","scope":"openId"},"$type":"TokenRequestValidationLog"}
+2019-09-18 16:20:01.819 +08:00 [INF] Starting IdentityServer4 version 2.5.0.0
+2019-09-18 16:20:02.207 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-09-18 16:20:02.207 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-09-18 16:20:02.207 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-09-18 16:20:02.207 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-09-18 16:20:02.207 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-09-18 16:20:02.207 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-09-18 16:20:02.679 +08:00 [DBG] Starting grant removal
+2019-09-18 16:20:03.065 +08:00 [DBG] Login Url: /Account/Login
+2019-09-18 16:20:03.067 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-09-18 16:20:03.067 +08:00 [DBG] Logout Url: /Account/Logout
+2019-09-18 16:20:03.067 +08:00 [DBG] ConsentUrl Url: /consent
+2019-09-18 16:20:03.067 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-09-18 16:20:03.067 +08:00 [DBG] Error Url: /home/error
+2019-09-18 16:20:03.067 +08:00 [DBG] Error Id Parameter: errorId
+2019-09-18 16:20:06.186 +08:00 [WRN] Query: '(from ClientRedirectUri t in [x].RedirectUris select [t].RedirectUri).FirstOrDefault()' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+2019-09-18 16:20:06.191 +08:00 [WRN] Query: '(from ClientPostLogoutRedirectUri r in [x].PostLogoutRedirectUris select [r].PostLogoutRedirectUri)....' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+2019-09-18 16:20:06.191 +08:00 [WRN] Query: '(from ClientSecret t in [x].ClientSecrets select [t].Value).FirstOrDefault()' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+2019-09-18 16:20:56.975 +08:00 [INF] Starting IdentityServer4 version 2.5.0.0
+2019-09-18 16:20:57.356 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-09-18 16:20:57.356 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-09-18 16:20:57.356 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-09-18 16:20:57.357 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-09-18 16:20:57.357 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-09-18 16:20:57.357 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-09-18 16:20:57.830 +08:00 [DBG] Starting grant removal
+2019-09-18 16:20:58.192 +08:00 [DBG] Login Url: /Account/Login
+2019-09-18 16:20:58.194 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-09-18 16:20:58.194 +08:00 [DBG] Logout Url: /Account/Logout
+2019-09-18 16:20:58.194 +08:00 [DBG] ConsentUrl Url: /consent
+2019-09-18 16:20:58.194 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-09-18 16:20:58.194 +08:00 [DBG] Error Url: /home/error
+2019-09-18 16:20:58.194 +08:00 [DBG] Error Id Parameter: errorId
+2019-09-18 16:21:01.225 +08:00 [WRN] Query: '(from ClientRedirectUri t in [x].RedirectUris select [t].RedirectUri).FirstOrDefault()' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+2019-09-18 16:21:01.231 +08:00 [WRN] Query: '(from ClientPostLogoutRedirectUri r in [x].PostLogoutRedirectUris select [r].PostLogoutRedirectUri)....' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+2019-09-18 16:21:01.231 +08:00 [WRN] Query: '(from ClientSecret t in [x].ClientSecrets select [t].Value).FirstOrDefault()' uses First/FirstOrDefault/Last/LastOrDefault operation without OrderBy and filter which may lead to unpredictable results.
+2019-09-18 16:21:17.918 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-09-18 16:21:17.949 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-09-18 16:21:17.949 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-09-18 16:21:17.968 +08:00 [DBG] Start token request.
+2019-09-18 16:21:17.977 +08:00 [DBG] Start client validation
+2019-09-18 16:21:17.987 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-09-18 16:21:17.990 +08:00 [DBG] Start parsing for secret in post body
+2019-09-18 16:21:18.008 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-09-18 16:21:18.008 +08:00 [DBG] Secret id found: passClient
+2019-09-18 16:21:19.414 +08:00 [DBG] passClient found in database: true
+2019-09-18 16:21:19.428 +08:00 [DBG] client configuration validation for client passClient succeeded.
+2019-09-18 16:21:19.438 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-09-18 16:21:19.438 +08:00 [DBG] Client validation success
+2019-09-18 16:21:19.447 +08:00 [DBG] Start token request validation
+2019-09-18 16:21:19.458 +08:00 [DBG] Start resource owner password token request validation
+2019-09-18 16:21:19.588 +08:00 [DBG] Found [] identity scopes in database
+2019-09-18 16:21:19.769 +08:00 [DBG] Found [] API scopes in database
+2019-09-18 16:21:19.775 +08:00 [ERR] Requested scope not allowed: openId
+2019-09-18 16:21:19.790 +08:00 [ERR] {"ClientId":"passClient","ClientName":"passClient","GrantType":"password","Scopes":null,"AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"username":"873","password":"***REDACTED***","grant_type":"password","client_id":"passClient","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2019-09-18 16:21:39.098 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-09-18 16:21:39.099 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-09-18 16:21:39.099 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-09-18 16:21:39.099 +08:00 [DBG] Start token request.
+2019-09-18 16:21:39.100 +08:00 [DBG] Start client validation
+2019-09-18 16:21:39.100 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-09-18 16:21:39.100 +08:00 [DBG] Start parsing for secret in post body
+2019-09-18 16:21:39.100 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-09-18 16:21:39.100 +08:00 [DBG] Secret id found: passClient
+2019-09-18 16:21:39.812 +08:00 [DBG] passClient found in database: true
+2019-09-18 16:21:39.812 +08:00 [DBG] client configuration validation for client passClient succeeded.
+2019-09-18 16:21:39.813 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-09-18 16:21:39.813 +08:00 [DBG] Client validation success
+2019-09-18 16:21:39.813 +08:00 [DBG] Start token request validation
+2019-09-18 16:21:39.813 +08:00 [DBG] Start resource owner password token request validation
+2019-09-18 16:21:39.889 +08:00 [DBG] Found [] identity scopes in database
+2019-09-18 16:21:39.966 +08:00 [DBG] Found [] API scopes in database
+2019-09-18 16:21:39.966 +08:00 [ERR] Requested scope not allowed: openId
+2019-09-18 16:21:39.966 +08:00 [ERR] {"ClientId":"passClient","ClientName":"passClient","GrantType":"password","Scopes":null,"AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"username":"873","password":"***REDACTED***","grant_type":"password","client_id":"passClient","client_secret":"***REDACTED***","scope":"openId"},"$type":"TokenRequestValidationLog"}
+2019-09-18 16:24:10.915 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-09-18 16:24:10.916 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-09-18 16:24:10.916 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-09-18 16:24:10.916 +08:00 [DBG] Start token request.
+2019-09-18 16:24:10.916 +08:00 [DBG] Start client validation
+2019-09-18 16:24:10.916 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-09-18 16:24:10.916 +08:00 [DBG] Start parsing for secret in post body
+2019-09-18 16:24:10.917 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-09-18 16:24:10.917 +08:00 [DBG] Secret id found: passClient
+2019-09-18 16:24:11.628 +08:00 [DBG] passClient found in database: true
+2019-09-18 16:24:11.628 +08:00 [DBG] client configuration validation for client passClient succeeded.
+2019-09-18 16:24:11.628 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-09-18 16:24:11.628 +08:00 [DBG] Client validation success
+2019-09-18 16:24:11.628 +08:00 [DBG] Start token request validation
+2019-09-18 16:24:11.628 +08:00 [DBG] Start resource owner password token request validation
+2019-09-18 16:24:11.705 +08:00 [DBG] Found [] identity scopes in database
+2019-09-18 16:24:11.782 +08:00 [DBG] Found [] API scopes in database
+2019-09-18 16:24:11.782 +08:00 [ERR] Requested scope not allowed: openId
+2019-09-18 16:24:11.782 +08:00 [ERR] {"ClientId":"passClient","ClientName":"passClient","GrantType":"password","Scopes":null,"AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"username":"873","password":"***REDACTED***","grant_type":"password","client_id":"passClient","client_secret":"***REDACTED***","scope":"openId"},"$type":"TokenRequestValidationLog"}
+2019-09-18 16:24:17.322 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-09-18 16:24:17.323 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-09-18 16:24:17.323 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-09-18 16:24:17.323 +08:00 [DBG] Start token request.
+2019-09-18 16:24:17.323 +08:00 [DBG] Start client validation
+2019-09-18 16:24:17.323 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-09-18 16:24:17.323 +08:00 [DBG] Start parsing for secret in post body
+2019-09-18 16:24:17.329 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-09-18 16:24:17.329 +08:00 [DBG] Secret id found: passClient
+2019-09-18 16:24:18.037 +08:00 [DBG] passClient found in database: true
+2019-09-18 16:24:18.037 +08:00 [DBG] client configuration validation for client passClient succeeded.
+2019-09-18 16:24:18.038 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-09-18 16:24:18.038 +08:00 [DBG] Client validation success
+2019-09-18 16:24:18.038 +08:00 [DBG] Start token request validation
+2019-09-18 16:24:18.038 +08:00 [DBG] Start resource owner password token request validation
+2019-09-18 16:24:18.115 +08:00 [DBG] Found [] identity scopes in database
+2019-09-18 16:24:18.192 +08:00 [DBG] Found [] API scopes in database
+2019-09-18 16:24:18.192 +08:00 [ERR] Requested scope not allowed: profile
+2019-09-18 16:24:18.193 +08:00 [ERR] {"ClientId":"passClient","ClientName":"passClient","GrantType":"password","Scopes":null,"AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"username":"873","password":"***REDACTED***","grant_type":"password","client_id":"passClient","client_secret":"***REDACTED***","scope":"profile"},"$type":"TokenRequestValidationLog"}
+2019-09-18 16:26:29.266 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-09-18 16:26:29.266 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-09-18 16:26:29.266 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-09-18 16:26:29.267 +08:00 [DBG] Start token request.
+2019-09-18 16:26:29.267 +08:00 [DBG] Start client validation
+2019-09-18 16:26:29.267 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-09-18 16:26:29.267 +08:00 [DBG] Start parsing for secret in post body
+2019-09-18 16:26:29.268 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-09-18 16:26:29.268 +08:00 [DBG] Secret id found: passClient
+2019-09-18 16:26:29.977 +08:00 [DBG] passClient found in database: true
+2019-09-18 16:26:29.977 +08:00 [DBG] client configuration validation for client passClient succeeded.
+2019-09-18 16:26:29.978 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-09-18 16:26:29.978 +08:00 [DBG] Client validation success
+2019-09-18 16:26:29.978 +08:00 [DBG] Start token request validation
+2019-09-18 16:26:29.978 +08:00 [DBG] Start resource owner password token request validation
+2019-09-18 16:26:30.060 +08:00 [DBG] Found [] identity scopes in database
+2019-09-18 16:26:30.138 +08:00 [DBG] Found [] API scopes in database
+2019-09-18 16:26:30.138 +08:00 [ERR] Requested scope not allowed: openId
+2019-09-18 16:26:30.138 +08:00 [ERR] {"ClientId":"passClient","ClientName":"passClient","GrantType":"password","Scopes":null,"AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"username":"873","password":"***REDACTED***","grant_type":"password","client_id":"passClient","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2019-09-18 16:28:55.636 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-09-18 16:28:55.636 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-09-18 16:28:55.636 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-09-18 16:28:55.637 +08:00 [DBG] Start token request.
+2019-09-18 16:28:55.637 +08:00 [DBG] Start client validation
+2019-09-18 16:28:55.637 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-09-18 16:28:55.637 +08:00 [DBG] Start parsing for secret in post body
+2019-09-18 16:28:55.638 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-09-18 16:28:55.638 +08:00 [DBG] Secret id found: passClient
+2019-09-18 16:28:56.333 +08:00 [DBG] passClient found in database: true
+2019-09-18 16:28:56.333 +08:00 [ERR] Invalid client configuration for client passClient: No redirect URI configured.
+2019-09-18 16:28:56.334 +08:00 [ERR] No client with id 'passClient' found. aborting
+2019-09-18 16:29:10.106 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-09-18 16:29:10.108 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-09-18 16:29:10.108 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-09-18 16:29:10.108 +08:00 [DBG] Start token request.
+2019-09-18 16:29:10.108 +08:00 [DBG] Start client validation
+2019-09-18 16:29:10.109 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-09-18 16:29:10.109 +08:00 [DBG] Start parsing for secret in post body
+2019-09-18 16:29:10.110 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-09-18 16:29:10.110 +08:00 [DBG] Secret id found: passClient
+2019-09-18 16:29:10.807 +08:00 [DBG] passClient found in database: true
+2019-09-18 16:29:10.807 +08:00 [ERR] Invalid client configuration for client passClient: No redirect URI configured.
+2019-09-18 16:29:10.807 +08:00 [ERR] No client with id 'passClient' found. aborting
+2019-09-18 16:29:20.045 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-09-18 16:29:20.045 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-09-18 16:29:20.047 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-09-18 16:29:20.047 +08:00 [DBG] Start token request.
+2019-09-18 16:29:20.047 +08:00 [DBG] Start client validation
+2019-09-18 16:29:20.047 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-09-18 16:29:20.047 +08:00 [DBG] Start parsing for secret in post body
+2019-09-18 16:29:20.055 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-09-18 16:29:20.056 +08:00 [DBG] Secret id found: passClient
+2019-09-18 16:29:20.756 +08:00 [DBG] passClient found in database: true
+2019-09-18 16:29:20.756 +08:00 [ERR] Invalid client configuration for client passClient: No redirect URI configured.
+2019-09-18 16:29:20.756 +08:00 [ERR] No client with id 'passClient' found. aborting
+2019-09-18 16:29:41.553 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-09-18 16:29:41.556 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-09-18 16:29:41.556 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-09-18 16:29:41.557 +08:00 [DBG] Start token request.
+2019-09-18 16:29:41.557 +08:00 [DBG] Start client validation
+2019-09-18 16:29:41.557 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-09-18 16:29:41.557 +08:00 [DBG] Start parsing for secret in post body
+2019-09-18 16:29:41.558 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-09-18 16:29:41.558 +08:00 [DBG] Secret id found: passClient
+2019-09-18 16:29:42.271 +08:00 [DBG] passClient found in database: true
+2019-09-18 16:29:42.271 +08:00 [ERR] Invalid client configuration for client passClient: No redirect URI configured.
+2019-09-18 16:29:42.271 +08:00 [ERR] No client with id 'passClient' found. aborting
+2019-09-18 16:30:02.896 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-09-18 16:30:02.896 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-09-18 16:30:02.896 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-09-18 16:30:02.897 +08:00 [DBG] Start token request.
+2019-09-18 16:30:02.897 +08:00 [DBG] Start client validation
+2019-09-18 16:30:02.897 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-09-18 16:30:02.897 +08:00 [DBG] Start parsing for secret in post body
+2019-09-18 16:30:02.897 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-09-18 16:30:02.897 +08:00 [DBG] Secret id found: passClient
+2019-09-18 16:30:03.610 +08:00 [DBG] passClient found in database: true
+2019-09-18 16:30:03.611 +08:00 [DBG] client configuration validation for client passClient succeeded.
+2019-09-18 16:30:03.611 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-09-18 16:30:03.611 +08:00 [DBG] Client validation success
+2019-09-18 16:30:03.611 +08:00 [DBG] Start token request validation
+2019-09-18 16:30:03.618 +08:00 [DBG] Start validation of custom grant token request
+2019-09-18 16:30:03.618 +08:00 [ERR] Client does not have the custom grant type in the allowed list, therefore requested grant is not allowed{"clientId":"passClient"}, details: {"ClientId":"passClient","ClientName":"passClient","GrantType":"implicit","Scopes":null,"AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"username":"873","password":"***REDACTED***","grant_type":"implicit","client_id":"passClient","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2019-09-18 16:30:10.204 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-09-18 16:30:10.205 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-09-18 16:30:10.205 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-09-18 16:30:10.206 +08:00 [DBG] Start token request.
+2019-09-18 16:30:10.206 +08:00 [DBG] Start client validation
+2019-09-18 16:30:10.206 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-09-18 16:30:10.206 +08:00 [DBG] Start parsing for secret in post body
+2019-09-18 16:30:10.271 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-09-18 16:30:10.271 +08:00 [DBG] Secret id found: passClient
+2019-09-18 16:30:10.998 +08:00 [DBG] passClient found in database: true
+2019-09-18 16:30:10.998 +08:00 [DBG] client configuration validation for client passClient succeeded.
+2019-09-18 16:30:10.998 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-09-18 16:30:10.998 +08:00 [DBG] Client validation success
+2019-09-18 16:30:10.999 +08:00 [DBG] Start token request validation
+2019-09-18 16:30:11.000 +08:00 [DBG] Start resource owner password token request validation
+2019-09-18 16:30:11.077 +08:00 [DBG] Found [] identity scopes in database
+2019-09-18 16:30:11.157 +08:00 [DBG] Found [] API scopes in database
+2019-09-18 16:30:11.157 +08:00 [ERR] Requested scope not allowed: openId
+2019-09-18 16:30:11.157 +08:00 [ERR] {"ClientId":"passClient","ClientName":"passClient","GrantType":"password","Scopes":null,"AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"username":"873","password":"***REDACTED***","grant_type":"password","client_id":"passClient","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2019-09-18 16:30:14.439 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-09-18 16:30:14.440 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-09-18 16:30:14.440 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-09-18 16:30:14.440 +08:00 [DBG] Start token request.
+2019-09-18 16:30:14.440 +08:00 [DBG] Start client validation
+2019-09-18 16:30:14.440 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-09-18 16:30:14.440 +08:00 [DBG] Start parsing for secret in post body
+2019-09-18 16:30:14.441 +08:00 [DBG] No secret in post body found
+2019-09-18 16:30:14.441 +08:00 [DBG] Parser found no secret
+2019-09-18 16:30:14.441 +08:00 [ERR] No client identifier found
+2019-09-18 16:30:19.717 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-09-18 16:30:19.718 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-09-18 16:30:19.718 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-09-18 16:30:19.718 +08:00 [DBG] Start token request.
+2019-09-18 16:30:19.718 +08:00 [DBG] Start client validation
+2019-09-18 16:30:19.718 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-09-18 16:30:19.718 +08:00 [DBG] Start parsing for secret in post body
+2019-09-18 16:30:19.723 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-09-18 16:30:19.723 +08:00 [DBG] Secret id found: passClient
+2019-09-18 16:30:20.438 +08:00 [DBG] passClient found in database: true
+2019-09-18 16:30:20.438 +08:00 [DBG] client configuration validation for client passClient succeeded.
+2019-09-18 16:30:20.438 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-09-18 16:30:20.438 +08:00 [DBG] Client validation success
+2019-09-18 16:30:20.438 +08:00 [DBG] Start token request validation
+2019-09-18 16:30:20.438 +08:00 [DBG] Start resource owner password token request validation
+2019-09-18 16:30:20.514 +08:00 [DBG] Found [] identity scopes in database
+2019-09-18 16:30:20.591 +08:00 [DBG] Found [] API scopes in database
+2019-09-18 16:30:20.591 +08:00 [ERR] Requested scope not allowed: openId
+2019-09-18 16:30:20.591 +08:00 [ERR] {"ClientId":"passClient","ClientName":"passClient","GrantType":"password","Scopes":null,"AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"username":"873","password":"***REDACTED***","grant_type":"password","client_id":"passClient","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2019-09-18 16:31:22.188 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-09-18 16:31:22.189 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-09-18 16:31:22.189 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-09-18 16:31:22.189 +08:00 [DBG] Start token request.
+2019-09-18 16:31:22.189 +08:00 [DBG] Start client validation
+2019-09-18 16:31:22.189 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-09-18 16:31:22.189 +08:00 [DBG] Start parsing for secret in post body
+2019-09-18 16:31:22.189 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-09-18 16:31:22.189 +08:00 [DBG] Secret id found: passClient
+2019-09-18 16:31:22.899 +08:00 [DBG] passClient found in database: true
+2019-09-18 16:31:22.899 +08:00 [DBG] client configuration validation for client passClient succeeded.
+2019-09-18 16:31:22.899 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-09-18 16:31:22.899 +08:00 [DBG] Client validation success
+2019-09-18 16:31:22.899 +08:00 [DBG] Start token request validation
+2019-09-18 16:31:22.899 +08:00 [DBG] Start resource owner password token request validation
+2019-09-18 16:31:22.977 +08:00 [DBG] Found [] identity scopes in database
+2019-09-18 16:31:23.055 +08:00 [DBG] Found [] API scopes in database
+2019-09-18 16:31:23.055 +08:00 [ERR] Requested scope not allowed: openId
+2019-09-18 16:31:23.055 +08:00 [ERR] {"ClientId":"passClient","ClientName":"passClient","GrantType":"password","Scopes":null,"AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"username":"873","password":"***REDACTED***","grant_type":"password","client_id":"passClient","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2019-09-18 16:31:28.279 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-09-18 16:31:28.279 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-09-18 16:31:28.279 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-09-18 16:31:28.280 +08:00 [DBG] Start token request.
+2019-09-18 16:31:28.280 +08:00 [DBG] Start client validation
+2019-09-18 16:31:28.280 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-09-18 16:31:28.280 +08:00 [DBG] Start parsing for secret in post body
+2019-09-18 16:31:28.345 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-09-18 16:31:28.346 +08:00 [DBG] Secret id found: passClient
+2019-09-18 16:31:29.078 +08:00 [DBG] passClient found in database: true
+2019-09-18 16:31:29.079 +08:00 [DBG] client configuration validation for client passClient succeeded.
+2019-09-18 16:31:29.079 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-09-18 16:31:29.079 +08:00 [DBG] Client validation success
+2019-09-18 16:31:29.079 +08:00 [DBG] Start token request validation
+2019-09-18 16:31:29.079 +08:00 [DBG] Start resource owner password token request validation
+2019-09-18 16:31:29.156 +08:00 [DBG] Found [] identity scopes in database
+2019-09-18 16:31:29.233 +08:00 [DBG] Found [] API scopes in database
+2019-09-18 16:31:29.233 +08:00 [ERR] Requested scope not allowed: roles
+2019-09-18 16:31:29.233 +08:00 [ERR] {"ClientId":"passClient","ClientName":"passClient","GrantType":"password","Scopes":null,"AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"username":"873","password":"***REDACTED***","grant_type":"password","client_id":"passClient","client_secret":"***REDACTED***","scope":"roles"},"$type":"TokenRequestValidationLog"}
+2019-09-18 16:31:47.517 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-09-18 16:31:47.518 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-09-18 16:31:47.519 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-09-18 16:31:47.519 +08:00 [DBG] Start token request.
+2019-09-18 16:31:47.519 +08:00 [DBG] Start client validation
+2019-09-18 16:31:47.519 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-09-18 16:31:47.519 +08:00 [DBG] Start parsing for secret in post body
+2019-09-18 16:31:47.524 +08:00 [DBG] client id without secret found
+2019-09-18 16:31:47.529 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-09-18 16:31:47.530 +08:00 [DBG] Secret id found: passClient
+2019-09-18 16:31:48.243 +08:00 [DBG] passClient found in database: true
+2019-09-18 16:31:48.244 +08:00 [DBG] client configuration validation for client passClient succeeded.
+2019-09-18 16:31:48.244 +08:00 [DBG] Hashed shared secret validator cannot process NoSecret
+2019-09-18 16:31:48.244 +08:00 [DBG] Secret validators could not validate secret
+2019-09-18 16:31:48.244 +08:00 [ERR] Client secret validation failed for client: passClient.
+2019-09-18 16:31:51.783 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-09-18 16:31:51.784 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-09-18 16:31:51.784 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-09-18 16:31:51.784 +08:00 [DBG] Start token request.
+2019-09-18 16:31:51.784 +08:00 [DBG] Start client validation
+2019-09-18 16:31:51.784 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-09-18 16:31:51.784 +08:00 [DBG] Start parsing for secret in post body
+2019-09-18 16:31:51.785 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-09-18 16:31:51.785 +08:00 [DBG] Secret id found: passClient
+2019-09-18 16:31:52.498 +08:00 [DBG] passClient found in database: true
+2019-09-18 16:31:52.498 +08:00 [DBG] client configuration validation for client passClient succeeded.
+2019-09-18 16:31:52.498 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-09-18 16:31:52.498 +08:00 [DBG] Client validation success
+2019-09-18 16:31:52.498 +08:00 [DBG] Start token request validation
+2019-09-18 16:31:52.498 +08:00 [DBG] Start resource owner password token request validation
+2019-09-18 16:31:52.574 +08:00 [DBG] Found [] identity scopes in database
+2019-09-18 16:31:52.651 +08:00 [DBG] Found [] API scopes in database
+2019-09-18 16:31:52.651 +08:00 [ERR] Requested scope not allowed: openId
+2019-09-18 16:31:52.651 +08:00 [ERR] {"ClientId":"passClient","ClientName":"passClient","GrantType":"password","Scopes":null,"AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"username":"873","password":"***REDACTED***","grant_type":"password","client_id":"passClient","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2019-09-18 16:39:11.771 +08:00 [INF] Starting IdentityServer4 version 2.5.0.0
+2019-09-18 16:39:12.261 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-09-18 16:39:12.261 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-09-18 16:39:12.261 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-09-18 16:39:12.261 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-09-18 16:39:12.261 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-09-18 16:39:12.261 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-09-18 16:39:12.964 +08:00 [DBG] Starting grant removal
+2019-09-18 16:39:13.320 +08:00 [DBG] Login Url: /Account/Login
+2019-09-18 16:39:13.322 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-09-18 16:39:13.322 +08:00 [DBG] Logout Url: /Account/Logout
+2019-09-18 16:39:13.323 +08:00 [DBG] ConsentUrl Url: /consent
+2019-09-18 16:39:13.323 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-09-18 16:39:13.323 +08:00 [DBG] Error Url: /home/error
+2019-09-18 16:39:13.323 +08:00 [DBG] Error Id Parameter: errorId
+2019-09-18 16:39:18.427 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-09-18 16:39:18.451 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-09-18 16:39:18.451 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-09-18 16:39:18.455 +08:00 [DBG] Start discovery request
+2019-09-18 16:39:19.679 +08:00 [DBG] Found [] as all scopes in database
+2019-09-18 16:42:01.017 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-09-18 16:42:01.027 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-09-18 16:42:01.028 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-09-18 16:42:01.053 +08:00 [DBG] Start discovery request
+2019-09-18 16:42:01.206 +08:00 [DBG] Found [] as all scopes in database
+2019-09-18 17:01:40.194 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-09-18 17:01:40.216 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-09-18 17:01:40.216 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-09-18 17:01:40.237 +08:00 [DBG] Start token request.
+2019-09-18 17:01:40.253 +08:00 [DBG] Start client validation
+2019-09-18 17:01:40.265 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-09-18 17:01:40.269 +08:00 [DBG] Start parsing for secret in post body
+2019-09-18 17:01:40.289 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-09-18 17:01:40.289 +08:00 [DBG] Secret id found: blogvuejs
+2019-09-18 17:01:40.798 +08:00 [DBG] blogvuejs found in database: false
+2019-09-18 17:01:40.804 +08:00 [ERR] No client with id 'blogvuejs' found. aborting
+2019-09-18 17:02:03.565 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-09-18 17:02:03.573 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-09-18 17:02:03.573 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-09-18 17:02:03.574 +08:00 [DBG] Start token request.
+2019-09-18 17:02:03.574 +08:00 [DBG] Start client validation
+2019-09-18 17:02:03.574 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-09-18 17:02:03.574 +08:00 [DBG] Start parsing for secret in post body
+2019-09-18 17:02:03.577 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-09-18 17:02:03.577 +08:00 [DBG] Secret id found: passClient
+2019-09-18 17:02:04.890 +08:00 [DBG] passClient found in database: true
+2019-09-18 17:02:04.902 +08:00 [DBG] client configuration validation for client passClient succeeded.
+2019-09-18 17:02:04.912 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-09-18 17:02:04.912 +08:00 [DBG] Client validation success
+2019-09-18 17:02:04.920 +08:00 [DBG] Start token request validation
+2019-09-18 17:02:04.933 +08:00 [DBG] Start resource owner password token request validation
+2019-09-18 17:02:05.054 +08:00 [DBG] Found [] identity scopes in database
+2019-09-18 17:02:05.178 +08:00 [DBG] Found [] API scopes in database
+2019-09-18 17:02:05.180 +08:00 [ERR] Requested scope not allowed: openId
+2019-09-18 17:02:05.194 +08:00 [ERR] {"ClientId":"passClient","ClientName":"passClient","GrantType":"password","Scopes":null,"AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"username":"873","password":"***REDACTED***","grant_type":"password","client_id":"passClient","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2019-09-18 17:05:46.082 +08:00 [INF] Starting IdentityServer4 version 2.5.0.0
+2019-09-18 17:05:46.315 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-09-18 17:05:46.315 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-09-18 17:05:46.315 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-09-18 17:05:46.315 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-09-18 17:05:46.315 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-09-18 17:05:46.315 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-09-18 17:05:46.545 +08:00 [DBG] Starting grant removal
+2019-09-18 17:05:46.856 +08:00 [DBG] Login Url: /Account/Login
+2019-09-18 17:05:46.863 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-09-18 17:05:46.863 +08:00 [DBG] Logout Url: /Account/Logout
+2019-09-18 17:05:46.863 +08:00 [DBG] ConsentUrl Url: /consent
+2019-09-18 17:05:46.864 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-09-18 17:05:46.864 +08:00 [DBG] Error Url: /home/error
+2019-09-18 17:05:46.864 +08:00 [DBG] Error Id Parameter: errorId
+2019-09-18 17:05:46.896 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-09-18 17:05:46.915 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-09-18 17:05:46.915 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-09-18 17:05:46.922 +08:00 [DBG] Start token request.
+2019-09-18 17:05:46.930 +08:00 [DBG] Start client validation
+2019-09-18 17:05:46.936 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-09-18 17:05:46.939 +08:00 [DBG] Start parsing for secret in post body
+2019-09-18 17:05:46.970 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-09-18 17:05:46.971 +08:00 [DBG] Secret id found: blogvuejs
+2019-09-18 17:05:48.101 +08:00 [DBG] blogvuejs found in database: false
+2019-09-18 17:05:48.108 +08:00 [ERR] No client with id 'blogvuejs' found. aborting

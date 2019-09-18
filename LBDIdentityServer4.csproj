@@ -17,4 +17,9 @@
     <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
     <PackageReference Include="Serilog.Sinks.File" Version="4.0.0" />
   </ItemGroup>
+  
+  <ItemGroup>
+    <Folder Include="Quickstart\ConfigurationManage\ApiResource\" />
+    <Folder Include="Quickstart\ConfigurationManage\IdentityResource\" />
+  </ItemGroup>
 </Project>
