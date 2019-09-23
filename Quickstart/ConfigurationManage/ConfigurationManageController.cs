@@ -47,7 +47,7 @@ namespace LBDIdentityServer4.Quickstart.ConfigurationManage
         }
 
         [HttpGet]
-        public async Task<IActionResult> AddClients()
+        public IActionResult AddClients()
         {
             var result = new ClientsViewModel
             {

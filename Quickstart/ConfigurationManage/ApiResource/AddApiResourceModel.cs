@@ -11,7 +11,7 @@ namespace LBDIdentityServer4.Quickstart.ConfigurationManage.ApiResource
 
 
 
-        public List<ApiResourceScore> scores { get; set; }
+        public List<string> claims { get; set; }
     }
 
     public class ApiResourceScore

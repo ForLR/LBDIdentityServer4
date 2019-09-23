@@ -109,7 +109,7 @@ namespace LBDIdentityServer4
                     option.ClientId = "123";
                     option.ClientSecret = "qw";
                 });
-            services.AddSingleton<IAuthorizationHandler, ContactIsOwnerAuthorizationHandler>();
+            services.AddSingleton<IAuthorizationHandler, PermissionAuthorizationHandler>();
         }
 
         public void Configure(IApplicationBuilder app)

@@ -149,16 +149,16 @@ namespace LBDIdentityServer4.Quickstart.User
         {
             var user = await _userManage.FindByIdAsync(id);
             if(user==null) return Redirect("Index");
-            List<string> AllClaimTypeList = new List<string>
-            {
-                "Edit Albums",
-                "Edit Users",
-                "Edit Roles",
-                "Email"
-            };
+            //List<string> AllClaimTypeList = new List<string>
+            //{
+            //    "Edit Albums",
+            //    "Edit Users",
+            //    "Edit Roles",
+            //    "Email"
+            //};
 
             var userClaims =await _userManage.GetClaimsAsync(user);
-            var claims = AllClaimTypeList.Except(userClaims.Select(x => x.Type)).ToList();
+            var claims = userClaims.Select(x => x.Type).ToList();
             var vm = new ManageClaimsModel
             {
                 UserId = user.Id,
