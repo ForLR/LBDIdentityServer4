@@ -19,7 +19,6 @@
   </ItemGroup>
   
   <ItemGroup>
-    <Folder Include="Quickstart\ConfigurationManage\ApiResource\" />
     <Folder Include="Quickstart\ConfigurationManage\IdentityResource\" />
   </ItemGroup>
 </Project>

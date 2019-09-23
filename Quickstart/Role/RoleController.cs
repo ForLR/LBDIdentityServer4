@@ -16,7 +16,7 @@ namespace LBDIdentityServer4.Quickstart.Role
     {
         private readonly RoleManager<IdentityRole> _roleManage;
         private readonly UserManager<ApplicationUser> _userManager;
-
+     
         public RoleController(RoleManager<IdentityRole> roleManage, UserManager<ApplicationUser> userManager)
         {
             this._roleManage = roleManage;
@@ -46,7 +46,9 @@ namespace LBDIdentityServer4.Quickstart.Role
                 Name=args.role_name,
                 NormalizedName=args.role_name
             };
-            var result = await _roleManage.CreateAsync(role);
+           var result = await _roleManage.CreateAsync(role);
+
+           
             if (result.Succeeded)
             {
                 return RedirectToAction("Index");

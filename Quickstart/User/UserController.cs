@@ -12,7 +12,8 @@ using Microsoft.Extensions.Caching.Memory;
 
 namespace LBDIdentityServer4.Quickstart.User
 {
-    [Authorize(Roles ="admin")]
+    //[Authorize(Roles ="admin")]
+    [Authorize(Policy = "MyPolicy")]
     public class UserController : Controller
     {
         private readonly UserManager<ApplicationUser> _userManage;
@@ -53,7 +54,8 @@ namespace LBDIdentityServer4.Quickstart.User
             var user = new ApplicationUser
             {
                 UserName = args.UserName,
-                Email = args.Email
+                Email = args.Email,
+                
             };
             var result = await _userManage.CreateAsync(user, args.PassWord);
             if (result.Succeeded)
