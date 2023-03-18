@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
 using IdentityModel;
@@ -20,16 +21,16 @@ namespace LBDIdentityServer4.Quickstart.ConfigurationManage.ApiResource
         }
         public async Task<IActionResult> Index()
         {
-            var data = await _context.ApiResources.ToListAsync();
+            var data =  await _context.ApiResources.ToListAsync();
             var result = new List<ApiResourceViewModel>();
-            data?.ForEach(x=> 
+            data?.ForEach(x =>
             {
                 result.Add(new ApiResourceViewModel
                 {
                     name = x.Name,
                     create_time = x.Created,
                     enabled = x.Enabled,
-                    scope=new List<string>()
+                    scope = new List<string>()
                     //scope=new List<string> {x.Scopes. }
                 });
             });
@@ -41,7 +42,7 @@ namespace LBDIdentityServer4.Quickstart.ConfigurationManage.ApiResource
         {
             var model = new AddApiResourceModel()
             {
-                claims=new List<string>
+                claims = new List<string>
                 {
                       Constants.CreateOperationName,
                       Constants.DeleteOperationName,
@@ -57,20 +58,28 @@ namespace LBDIdentityServer4.Quickstart.ConfigurationManage.ApiResource
         {
 
             var claims = new List<IdentityServer4.EntityFramework.Entities.ApiResourceClaim>();
-            args.claims?.ForEach(x=> { claims.Add(new IdentityServer4.EntityFramework.Entities.ApiResourceClaim
+            args.claims?.ForEach(x =>
             {
-              Type=x
-            }); });
+                claims.Add(new IdentityServer4.EntityFramework.Entities.ApiResourceClaim
+                {
+                    Type = x
+                });
+            });
 
             _context.ApiResources.Add(new IdentityServer4.EntityFramework.Entities.ApiResource
             {
-                Name=args.name,
+                Name = args.name,
                 UserClaims = claims,
-                Scopes =new List<IdentityServer4.EntityFramework.Entities.ApiScope> { new IdentityServer4.EntityFramework.Entities.ApiScope { Name= User.Identity.Name } }
-                
+                Scopes = new List<IdentityServer4.EntityFramework.Entities.ApiResourceScope> {
+                   
+                    new IdentityServer4.EntityFramework.Entities.ApiResourceScope
+                    {
+                        Scope=args.name,
+                    } }
+
             });
             var result = await _context.SaveChangesAsync();
-            if (result>0)
+            if (result > 0)
             {
                 return RedirectToAction("Index");
             }

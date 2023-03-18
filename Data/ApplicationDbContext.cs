@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace LBDIdentityServer4.Data
+namespace LBDIdentityServer4
 {
     public class ApplicationDbContext:IdentityDbContext<ApplicationUser>
     {

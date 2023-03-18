@@ -13,7 +13,7 @@ using Microsoft.Extensions.Caching.Memory;
 namespace LBDIdentityServer4.Quickstart.User
 {
     //[Authorize(Roles ="admin")]
-    [Authorize(Policy = "MyPolicy")]
+   [Authorize(Policy = "MyPolicy")]
     public class UserController : Controller
     {
         private readonly UserManager<ApplicationUser> _userManage;

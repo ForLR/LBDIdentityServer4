@@ -2,9 +2,7 @@
 # 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
 ################################################################################
 
-/.vs/LBDIdentityServer4
 /obj
-/LBDIdentityServer4.csproj.user
 /identityserver4_log.txt
 /bin
 /.vs

@@ -2,9 +2,6 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
-using System;
-using System.Reflection;
-using IdentityServer4.Models;
 using LBDIdentityServer4.Auth;
 using LBDIdentityServer4.Data;
 using LBDIdentityServer4.Model;
@@ -16,19 +13,20 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.IdentityModel.Tokens;
-using Microsoft.AspNetCore.Mvc.Authorization;
+using Microsoft.Extensions.Hosting;
+using System;
+using System.Reflection;
 
 
 namespace LBDIdentityServer4
 {
     public class Startup
     {
-        public IHostingEnvironment Environment { get; }
+        public IWebHostEnvironment Environment { get; }
 
         public IConfiguration _configuration { get; }
 
-        public Startup(IHostingEnvironment environment, IConfiguration configuration)
+        public Startup(IWebHostEnvironment environment, IConfiguration configuration)
         {
             Environment = environment;
             _configuration = configuration;
@@ -39,11 +37,11 @@ namespace LBDIdentityServer4
 
             services.AddAuthorization(option =>
             {
-              option.AddPolicy("MyPolicy", policy => 
-              {
-                  policy.RequireRole("admin");
-                  policy.AddRequirements(new OperationAuthorizationRequirement() { Name= "Create" });
-              });
+                option.AddPolicy("MyPolicy", policy =>
+                {
+                    policy.RequireRole("admin");
+                    policy.AddRequirements(new OperationAuthorizationRequirement() { Name = "Create" });
+                });
             });
             // uncomment, if you want to add an MVC-based UI
             string connStr = _configuration.GetConnectionString("DefaultConnection");
@@ -55,11 +53,14 @@ namespace LBDIdentityServer4
             });
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
-                
                 .AddDefaultTokenProviders();
 
-           
 
+            //配置session的有效时间,单位秒
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromSeconds(30);
+            });
             services.AddMvc();
             services.Configure<IISOptions>(iis =>
             {
@@ -102,31 +103,40 @@ namespace LBDIdentityServer4
                //builder.AddSigningCredential(new SigningCredentials(new System.Security.Cryptography.X509Certificates.X509Certificate2(),""));    
                 throw new Exception("need to configure key material");
             }
-          
-            services.AddAuthentication()
-                .AddGoogle(option=> 
-                {
-                    option.ClientId = "123";
-                    option.ClientSecret = "qw";
-                });
+
+            services.AddAuthentication();
+                //.AddGoogle(option=> 
+                //{
+                //    option.ClientId = "123";
+                //    option.ClientSecret = "qw";
+                //});
+
+
             services.AddSingleton<IAuthorizationHandler, PermissionAuthorizationHandler>();
         }
 
-        public void Configure(IApplicationBuilder app)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (Environment.IsDevelopment())
+            if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseDatabaseErrorPage();
             }
 
-            // uncomment if you want to support static files
+            app.UseCookiePolicy();
+            app.UseSession();
             app.UseStaticFiles();
-
+            app.UseRouting();
             app.UseIdentityServer();
 
-            // uncomment, if you want to add an MVC-based UI
-            app.UseMvcWithDefaultRoute();
+            app.UseAuthentication();
+            app.UseAuthorization();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
+            });
         }
     }
 }

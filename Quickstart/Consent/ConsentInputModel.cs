@@ -4,7 +4,7 @@
 
 using System.Collections.Generic;
 
-namespace LBDIdentityServer4
+namespace IdentityServerHost.Quickstart.UI
 {
     public class ConsentInputModel
     {
@@ -12,5 +12,6 @@ namespace LBDIdentityServer4
         public IEnumerable<string> ScopesConsented { get; set; }
         public bool RememberConsent { get; set; }
         public string ReturnUrl { get; set; }
+        public string Description { get; set; }
     }
 }
