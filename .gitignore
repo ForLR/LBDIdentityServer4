@@ -3,7 +3,8 @@
 ################################################################################
 
 /.vs/LBDIdentityServer4
-/bin/Debug/netcoreapp2.2
 /obj
 /LBDIdentityServer4.csproj.user
 /identityserver4_log.txt
+/bin
+/.vs
